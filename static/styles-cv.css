@@ -1,28 +1,97 @@
-body {margin: 0; text-align: left; color: #401f4; font-family: 'Source Sans Pro', sans-serif; line-height: 1.5; font-weight: normal}
+:root {
+    --dark-color: rgb(64, 110, 248);
+    --dark-color-hover: rgb(155, 180, 253);
+    --light-color: #a4c1e2;
+    --btn-light-color: #7aade7;
+    --btn-hover-color: #69b7f7;
+}
 
-.name {text-align: center; color: #ff9292; margin: 0 auto 0 auto; font-size: 4.5rem; font-family: 'Sacramento', cursive; font-weight: normal; padding: 10px}
-
-.subtitle {color: #ff9292; font-family: 'Raleway', sans-serif; text-align: left}
-
-.footer-link {color: #ffdcdc; font-family: 'Raleway'; font-weight: bold; margin: 10px 20px; text-decoration: none}
-
-.footer-link:hover {color: white}
-
-
-.dotted-line {border: 8px dotted #ffe8e8; border-bottom: none; width: 90%; margin: 45px auto 35px auto}
+body {
+    margin: 0; 
+    text-align: left; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    line-height: 1.5; 
+    font-weight: normal
+}
 
 
-.skill-row {text-align: left; margin: 5px auto 5px auto}
+.name {
+    text-align: center; 
+    color: var(--dark-color); 
+    margin: 0 auto 0 auto; 
+    font-size: 4.5rem; 
+    font-family: 'Sacramento', cursive; 
+    font-weight: normal; 
+    padding: 10px
+}
 
-.intro {width: 30%; margin: auto}
+.subtitle {
+    font-weight: bold;
+    color: var(--dark-color); 
+    font-family: 'Raleway', sans-serif; 
+    text-align: left
+}
 
-.copyright {color: #ffdcdc; font-size: 0.75rem; padding: 20px 0}
+.footer-link {
+    color: var(--light-color); 
+    font-family: 'Raleway'; 
+    font-weight: bold; 
+    margin: 10px 20px; 
+    text-decoration: none}
 
-.top-container {background-color: #ffe8e8; position: relative; padding: 10px}
+.footer-link:hover {
+    color: white
+}
 
-.mid-container {margin: 50px 50px}
+hr {
+    margin: 2rem 0 !important;
+}
 
-.bottom-container {background-color: #ff9292; text-decoration: #ff9292; padding: 50px 0 20px; text-align: center}
+.details input,
+.details span {
+    display: none;
+}
+.details input:checked~span {
+    display: block;
+}
+.details em:after {
+    content: "+ Ver mais +";
+}
+.details input:checked~em:after {
+    content: "- Esconder -";
+}
 
-.flower {width: 4rem; float: left; margin-right: 30px}
-.flower2 {width: 4rem; float: right; margin-left: 30px}
+.table-row {
+    width: 250px;
+}
+
+.skill-row {
+    text-align: left; 
+    margin: 5px auto 5px auto
+}
+
+.intro {
+    width: 30%; 
+    margin: auto
+}
+
+.copyright {
+    color: var(--light-color); 
+    font-size: 0.75rem; 
+    padding: 20px 0}
+
+.top-container {
+    background-color: var(--light-color); 
+    position: relative; 
+    padding: 10px}
+
+.mid-container {
+    margin: 50px 50px
+}
+
+.bottom-container {
+    background-color: var(--dark-color); 
+    text-decoration: var(--dark-color); 
+    padding: 40px 0 10px; 
+    text-align: center
+}

@@ -1,48 +1,145 @@
-body {margin: 0; text-align: center; color: #401f4; font-family: 'Source Sans Pro', sans-serif; line-height: 1.5}
+:root,
+:root.rosa {
+  --dark-color: #ff9292;
+  --dark-color-hover: #fcb0b0;
+  --light-color: #ffdcdc;
+  --btn-light-color: #ffb4b4;
+  --btn-hover-color: #fac5c5;
+}
 
-.name {color: #ff9292; margin: 50px auto 0 auto; font-size: 5rem; font-family: 'Sacramento', cursive; font-weight: normal}
+:root.azul {
+  --dark-color: rgb(64, 102, 224);
+  --dark-color-hover: rgb(96, 136, 255);
+  --light-color: #92b8e4;
+  --btn-light-color: #7aade7;
+  --btn-hover-color: #69b7f7;
+}
 
-.subtitle {color: #ff9292; font-family: 'Raleway', sans-serif; padding-bottom: 10px}
+:root.amarelo {
+  --dark-color: rgb(204, 178, 32);
+  --dark-color-hover: rgb(229, 241, 114);
+  --light-color: #e3e492;
+  --btn-light-color: #e0e77a;
+  --btn-hover-color: #f5f769;
+}
 
-.skill {color: #ff9292; font-family: 'Raleway', sans-serif;}
+body {
+  margin: 0; 
+  text-align: center; 
+  font-family: 'Source Sans Pro', sans-serif; 
+  line-height: 1.5
+}
 
-.pink-descript {color: #ff9292; font-family: 'Raleway', sans-serif;}
+.name {
+  color: var(--dark-color); 
+  margin: 50px auto 0 auto; 
+  font-size: 5rem; 
+  font-family: 'Sacramento', cursive; 
+  font-weight: normal
+}
 
-.black-descript {color: #454545; font-family: 'Raleway', sans-serif;}
+.subtitle {
+  color: var(--dark-color); 
+  font-family: 'Raleway', sans-serif; 
+  padding-bottom: 10px
+}
 
-.footer-link {color: #ffdcdc; font-family: 'Raleway'; font-weight: bold; margin: 10px 20px; text-decoration: none}
+.skill {
+  color: var(--dark-color); 
+  font-family: 'Raleway', sans-serif;
+}
 
-.footer-link:hover {color: white}
+.pink-descript {
+  color: var(--text-color); 
+  font-family: 'Raleway', sans-serif;
+}
 
-.dotted-line {border: 8px dotted #ffe8e8; border-bottom: none; width: 4%; margin: 100px auto 100px auto}
+.black-descript {
+  color: #454545; 
+  font-family: 'Raleway', sans-serif;
+}
 
-.skill-row {width: 50%; margin: 100px auto 100px auto; text-align: left; line-height: 1.5}
+.footer-link {
+  color: var(--light-color); 
+  font-family: 'Raleway'; 
+  font-weight: bold; 
+  margin: 10px 20px; 
+  text-decoration: none
+}
 
-.pro {text-decoration: underline}
+.footer-link:hover {
+  color: white
+}
 
-.intro {width: 30%; margin: auto}
+.dotted-line {
+  border: 8px dotted var(--light-color); 
+  border-bottom: none; 
+  width: 4%; 
+  margin: 100px auto 100px auto
+}
 
-.borboleta {margin-top: 40px; margin-bottom: 0;}
+.skill-row {
+  width: 50%; 
+  margin: 100px auto 100px auto; 
+  text-align: left; 
+  line-height: 1.5
+}
 
-.top-cloud {position: absolute; right: 300px; top: 40px}
+.pro {
+  text-decoration: underline
+}
 
-.bottom-cloud {position: absolute; left: 250px; bottom: 300px}
+.intro {
+  width: 30%; 
+  margin: auto
+}
 
-.profile-img {border-radius: 50%; width: 12%;}
+.borboleta {
+  margin-top: 40px; 
+  margin-bottom: 0;
+}
 
-.heart, .part-of-me, .learning, .calendar {width: 10%; float: left; margin-right: 30px}
+.top-cloud {
+  position: absolute; 
+  right: 300px; 
+  top: 40px
+}
 
-.contact-me {width: 40%; margin: 40px auto 60px}
+.bottom-cloud {
+  position: absolute; 
+  left: 250px; 
+  bottom: 300px
+}
 
-.copyright {color: #ffdcdc; font-size: 0.75rem; padding: 20px 0}
+.profile-img {
+  border-radius: 50%; 
+  width: 12%;
+}
+
+.heart, .part-of-me, .learning, .calendar {
+  width: 10%; 
+  float: left; 
+  margin-right: 30px
+}
+
+.contact-me {
+  width: 40%; 
+  margin: 40px auto 60px
+}
+
+.copyright {
+  color: var(--light-color); 
+  font-size: 0.75rem; 
+  padding: 20px 0
+}
 
 .btn {
-  background: #ffb4b4;
-  background-image: -webkit-linear-gradient(top, #ffb4b4, #ff9292);
-  background-image: -moz-linear-gradient(top, #ffb4b4, #ff9292);
-  background-image: -ms-linear-gradient(top, #ffb4b4, #ff9292);
-  background-image: -o-linear-gradient(top, #ffb4b4, #ff9292);
-  background-image: linear-gradient(to bottom, #ffb4b4, #ff9292);
+  background: var(--btn-light-color);
+  background-image: -webkit-linear-gradient(top, var(--btn-light-color), var(--dark-color));
+  background-image: -moz-linear-gradient(top, var(--btn-light-color), var(--dark-color));
+  background-image: -ms-linear-gradient(top, var(--btn-light-color), var(--dark-color));
+  background-image: -o-linear-gradient(top, var(--btn-light-color), var(--dark-color));
+  background-image: linear-gradient(to bottom, var(--btn-light-color), var(--dark-color));
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
@@ -50,22 +147,33 @@ body {margin: 0; text-align: center; color: #401f4; font-family: 'Source Sans Pr
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
-  border: solid #f79191 1px;
+  border: solid var(--dark-color) 1px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background: #fac5c5;
-  background-image: -webkit-linear-gradient(top, #fac5c5, #fcb0b0);
-  background-image: -moz-linear-gradient(top, #fac5c5, #fcb0b0);
-  background-image: -ms-linear-gradient(top, #fac5c5, #fcb0b0);
-  background-image: -o-linear-gradient(top, #fac5c5, #fcb0b0);
-  background-image: linear-gradient(to bottom, #fac5c5, #fcb0b0);
+  background: var(--btn-hover-color);
+  background-image: -webkit-linear-gradient(top, var(--btn-hover-color), var(--dark-color-hover));
+  background-image: -moz-linear-gradient(top, var(--btn-hover-color), var(--dark-color-hover));
+  background-image: -ms-linear-gradient(top, var(--btn-hover-color), var(--dark-color-hover));
+  background-image: -o-linear-gradient(top, var(--btn-hover-color), var(--dark-color-hover));
+  background-image: linear-gradient(to bottom, var(--btn-hover-color), var(--dark-color-hover));
   text-decoration: none;
 }
 
-.top-container {background-color: #ffe8e8; position: relative; padding: 100px}
+.top-container {
+  background-color: var(--light-color); 
+  position: relative;
+  padding: 100px
+}
 
-.mid-container {margin: 100px 0}
+.mid-container {
+  color: var(--mid-color);
+  margin: 100px 0
+}
 
-.bottom-container {background-color: #ff9292; text-decoration: #ff9292; padding: 50px 0 20px}
+.bottom-container {
+  background-color: var(--dark-color); 
+  text-decoration: var(--dark-color); 
+  padding: 50px 0 20px
+}

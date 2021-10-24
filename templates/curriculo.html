@@ -1,3 +1,6 @@
+<!-- PARA MUDAR A COR DAS BARRAS DE PROGRESSO: style="width: 70%; background-color: {color}" -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +10,14 @@
     <link rel="icon" href="../static/icon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Sacramento&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 
     <body>
+    <script type="text/javascript" src="../scripts.js"></script>
+
     <div class="top-container">
-        <img class="flower" src="../static/rosa1.png" alt="img-rosa">
-        <img class="flower2" src="../static/rosa1.png" alt="img-rosa">
         <div class="skill-row">
         <h1 class="name">Alessandra de Souza Reis</h1>
         </div>
@@ -21,39 +25,40 @@
 
     <div class="mid-container">
   
-        <h3 class="subtitle">Resumo</h3>
+        <h3 class="subtitle">Trajetória e objetivos</h3>
         <p>Bacharel em administração, passei por Psicologia e me encontrei na Computação. Atualmente trabalho como professora de programação
             na BYJU'S FutureSchool. Minhas principais habilidades são Python, HTML e CSS, mas estou sempre em busca de
             cursos extracurriculares e projetos paralelos para me aprimorar. Sou proativa, organizada, tenho facilidade em
             trabalhar em equipe e prezo pela qualidade dos meus trabalhos. Aprendo rápido e sou autodidata,
             tendo adquirido grande parte do meu conhecimento tecnológico a partir de interesse e pesquisa próprios.
+            No momento, procuro estágio como desenvolvedora ou como QA.
             </p>
 
- <hr class="dotted-line">
+ <hr>
 
         <h3 class="subtitle">Trabalho</h3>
         <div class="skill-row">
-            <p><strong>mai/2021 - atual:</strong> Professora de Programação na <a href="https://www.byjusfutureschool.com/"> BYJU's Future School</a></p>
+            <p><strong>2021 - atualmente:</strong> Professora de Programação na <a href="https://www.byjusfutureschool.com/"> BYJU's Future School</a></p>
         </div>
         <p><em>Ensino a crianças os fundamentos da programação - lógica, estrutura, sequência e pensamento algorítmico - para
             produzir resultados criativos como animações, jogos e aplicativos, começando com linguagem de blocos (Blockly) e evoluindo
             para aplicações web com HTML, CSS e Javascript. </em></p>
 
- <hr class="dotted-line">
+ <hr>
         <h3 class="subtitle">Educação</h3>
         <div class="skill-row">
-            <p><strong>2021 - atual:</strong> Ciência da Computação pela Universidade Estácio de Sá</p>
+            <p><strong>2021 - atualmente:</strong> Ciência da Computação pela Universidade Estácio de Sá</p>
             <p><strong>2018 - 2021:</strong> Psicologia pela Universidade Federal Fluminense</p>
             <p><strong>2013 - 2017:</strong> Administração pela Universidade Federal Fluminense</p>
         </div>
 
- <hr class="dotted-line">
+ <hr>
 
         <h3 class="subtitle">Cursos</h3>
         <div class="skill-row">
             ◼ <a href="https://www.udemy.com/course/100-days-of-code/" target="_blank">100 Days of Code - The Complete Python Pro Bootcamp for 2021</a> (Cursando)<p></p>
         </div>
-        <p><em>Construindo um projeto por dia de aula, aprendi a trabalhar com Python, HTML, CSS, Flask, Programação Orientada a Objetos, Boostrap,
+        <p><em>Com a proposta de um projeto por dia de aula, aprendi a trabalhar com Python, HTML, CSS, Flask, Programação Orientada a Objetos, Boostrap,
             Webscraping e automação (Beautiful Soup e Selenium), Tkinter (GUI), APIs, Pandas, Jinja, Twilio e ainda há muito mais por vir.</em></p>
 
         <div class="skill-row">
@@ -69,9 +74,56 @@
         </div>
         <p><em>Com várias exercícios práticos, aprendi a lógica e os comandos essenciais para lidar com banco de dados usando a linguagem SQL.
         </em></p>
+        <br>
+        <h4 class="subtitle">Mini-cursos</h4>
+        <p>Além dos cursos grandes e bootcamps, frequentemente faço mini-cursos, de até 5h de duração, 
+            para me aprofundar em assuntos específicos. São alguns deles:</p>
+
+            <div class="skill-row">
+                ◼ Introdução à Qualidade de Software
+            </div>
+            
+            <div class="skill-row">
+                ◼ Projetos Ágeis com SCRUM
+            </div>
+
+            <div class="skill-row">
+                ◼ Introdução ao Git e Github
+            </div>
+
+            <div class="skill-row">
+                ◼ Introdução à Criação de Websites com HTML5 e CSS3
+            </div>
+
+            <div class="skill-row">
+                ◼ Programação para a Internet com JavaScript
+            </div>
+
+            <label class="details">
+                <input type="checkbox" />
+                <span>
+                    <div class="skill-row">
+                        ◼ JavaScript ES6 Essencial
+                    </div>
+                    
+                    <div class="skill-row">
+                        ◼ Desenvolvimento Avançado com JavaScript ES6
+                    </div>
+        
+                    <div class="skill-row">
+                        ◼ Introdução à Programação com Python
+                    </div>
+        
+                    <div class="skill-row">
+                        ◼ Lógica de Programação Essencial
+                    </div>
+                </span>
+                <em> </em>
+            </label> 
 
 
- <hr class="dotted-line" hidden>
+
+ <hr hidden>
 
         <h3 class="subtitle" hidden>Outros</h3>
         <p hidden>Em constante movimento, frequentemente busco projetos pessoais que testam e desenvolvem ainda mais minhas habilidades. 
@@ -79,52 +131,90 @@
             engine, criando animações com o <b>UMotion</b>. Também estou matriculada em um bootcamp pela Digital Innovation One,
             focado no desenvolvimento web.</p>
 
-<hr class="dotted-line">
+<hr>
         <h3 class="subtitle">Habilidades</h3>
+        <p>Abaixo, estão listadas minhas habilidades. As que estão com as barras
+            animadas são as que estou desenvolvendo atualmente.</p>
 
     <table cellspacing="10px">
         <tbody>
         <tr>
-            <td><strong>Python</strong></td> <td><strong>🟢🟢🟢🟢</strong></td>
+            <td  class="table-row"><strong>Python</strong></td> 
+            <td  class="table-row"><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Excel</strong></td>  <td><strong>🟢🟢🟢🟢</strong></td> 
+            <td><strong>Excel</strong></td>  
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Inglês</strong></td> <td><strong>🟢🟢🟢🟢</strong></td>
+            <td><strong>Inglês</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>HTML</strong></td> <td><strong>🟡🟡🟡</strong></td>
+            <td><strong>HTML</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 43%;" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>CSS</strong></td> <td><strong>🟡🟡🟡</strong></td>
+            <td><strong>CSS</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 43%;" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Banco de Dados (SQL)</strong></td> <td><strong>🟡🟡🟡</strong></td>
+            <td><strong>Banco de Dados (SQL)</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>GitHub</strong></td> <td><strong>🟡🟡🟡</strong></td>
+            <td><strong>GitHub</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Javascript</strong></td> <td><strong>🟠🟠</strong></td>
+            <td><strong>Javascript</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 23%;" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Git</strong></td> <td><strong>🟠🟠</strong></td>
+            <td><strong>Git</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>Bootstrap</strong></td> <td><strong>🟠🟠</strong></td>
+            <td><strong>Bootstrap</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>API RESTful</strong></td> <td><strong>🟠🟠</strong></td>
+            <td><strong>API RESTful</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
          <tr>
-            <td><strong>Flask</strong></td> <td><strong>🟠🟠</strong></td>
+            <td><strong>Flask</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
         <tr>
-            <td><strong>C#</strong></td> <td><strong>🟠</strong></td>
-        </tr>
-        <tr>
-            <td><strong>Unity</strong></td> <td><strong>🟠</strong></td>
+            <td><strong>Django</strong></td>
+            <td><div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></td>
         </tr>
 
     </tbody></table>
